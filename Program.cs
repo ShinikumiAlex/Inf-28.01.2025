@@ -4,19 +4,17 @@ class Program
 {
     static void Main()
     {
-        int a1 = 1; 
-        int d = 4;  
-        int n = 5;  
-        int sum = 0; 
+        int firstMonth = 100; 
+        int increment = 50;  
+        int months = 10;     
+        int totalSum = 0;    
 
-        Console.WriteLine("Первые пять членов арифметической прогрессии:");
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < months; i++)
         {
-            int currentTerm = a1 + i * d; 
-            Console.Write(currentTerm + " "); 
-            sum += currentTerm; 
+            int currentMonth = firstMonth + i * increment; 
+            totalSum += currentMonth; 
         }
 
-        Console.WriteLine($"\nСумма: {sum}");
+        Console.WriteLine($"Общая сумма через {months} месяцев: {totalSum} руб.");
     }
 }
